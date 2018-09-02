@@ -17,7 +17,8 @@ year = "2018",
 ```
 
 ## Some segmentation results:
-| Dataset       | RGB_Image     \ Segmented_Image|
+
+| Dataset       | RGB_Image     | Segmented_Image|
 | ------------- | ------------- | -------------  |
 | Cityscapes    |<img src="images/city2.png" width=400> |  <img src="images/city2_pred_v2.png" width=400>|
 | Forest  | <img src="images/forest2.png" width=400>  |<img src="images/forest2_pred_v2.png" width=400> |
