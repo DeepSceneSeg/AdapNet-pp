@@ -24,7 +24,7 @@ year = "2018",
 | Forest  | <img src="images/forest2.png" width=400>  |<img src="images/forest2_pred_v2.png" width=400> |
 | Sun  | <img src="images/sun1.png" width=400>  | <img src="images/sun1_pred_v2.png" width=400>|
 | Synthia  | <img src="images/synthia1.png" width=400>  | <img src="images/sun1_pred_v2.png" width=400> |
-| Scannet  | <img src="images/scannet1.png" width=400>  |<img src="images/scannet1_pred_v2.png" width=400> |
+| Scannetv2  | <img src="images/scannet1.png" width=400>  |<img src="images/scannet1_pred_v2.png" width=400> |
 
 
 ## System requirement
