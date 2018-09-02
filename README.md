@@ -18,11 +18,11 @@ year = "2018",
 
 ## Some segmentation results:
 
-| Dataset       | RGB_Image     | Segmented_Image|
+| Dataset       | RGB Image     | Segmented Image|
 | ------------- | ------------- | -------------  |
 | Cityscapes    |<img src="images/city2.png" width=400> |  <img src="images/city2_pred_v2.png" width=400>|
 | Forest  | <img src="images/forest2.png" width=400>  |<img src="images/forest2_pred_v2.png" width=400> |
-| Sun  | <img src="images/sun1.png" width=400>  | <img src="images/sun1_pred_v2.png" width=400>|
+| Sun RGB-D  | <img src="images/sun1.png" width=400>  | <img src="images/sun1_pred_v2.png" width=400>|
 | Synthia  | <img src="images/synthia1.png" width=400>  | <img src="images/synthia1_pred_v2.png" width=400> |
 | Scannetv2  | <img src="images/scannet1.png" width=400>  |<img src="images/scannet1_pred_v2.png" width=400> |
 
