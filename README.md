@@ -8,11 +8,11 @@ Adapnet++ can further be used with [CMoDE](https://github.com/DeepSceneSeg/CMoDE
 If you find the code useful for your research, please consider citing our paper:
 ```
 @article{valada18SSMA,
-author = {Valada, Abhinav and Mohan, Rohit and Burgard, Wolfram},
-title = {Self-Supervised Model Adaptation for Multimodal Semantic Segmentation},
-journal = {arXiv preprint arXiv:1808.03833},
-month = {August},
-year = {2018},
+  author = {Valada, Abhinav and Mohan, Rohit and Burgard, Wolfram},
+  title = {Self-Supervised Model Adaptation for Multimodal Semantic Segmentation},
+  journal = {arXiv preprint arXiv:1808.03833},
+  month = {August},
+  year = {2018},
 }
 ```
 ## Live Demo
