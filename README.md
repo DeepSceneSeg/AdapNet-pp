@@ -85,7 +85,6 @@ tensorflow-gpu 1.4.0
     learning_rate: initial learning rate
     save_step: how many steps to save the model
     power: parameter for poly learning rate
-    
 ```
 
 #### Evaluation Params
@@ -99,7 +98,6 @@ tensorflow-gpu 1.4.0
     skip_step: how many steps to print mIoU
     height: height of input image
     width: width of input image
-    
 ```
 
 ## Training and Evaluation
