@@ -117,7 +117,7 @@ python evaluate.py -c config cityscapes_test.config or python evaluate.py --conf
 ```
 ## Additional Notes:
    * We only provide the single scale evaluation script. Multi-Scale+Flip evaluation further imporves the performance of the model.
-   * The code in this repository only performs training on a single GPU. Multi-GPU training using synchronized batch normalization with larger batch size furthur improves the performance of the model.
+   * The code in this repository only performs training on a single GPU. Multi-GPU training using synchronized batch normalization with larger batch size further improves the performance of the model.
    * Initializing the model with pre-trained weights from large datasets such as the Mapillary Vistas and BDD100K yields an improved performance.
    
 ## License
