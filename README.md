@@ -109,7 +109,7 @@ python train.py -c config cityscapes_train.config or python train.py --config ci
 
 #### Evaluation
 
-Select a checkpoint to test/validate your model in terms of mean IoU metric.
+Select a checkpoint to test/validate your model in terms of the mean IoU metric.
 Edit the config file for evaluation in config folder. Run:
 
 ```
