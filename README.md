@@ -15,6 +15,7 @@ If you find the code useful for your research, please consider citing our paper:
   year = {2018},
 }
 ```
+
 ## Live Demo
 http://deepscene.cs.uni-freiburg.de
 
@@ -38,10 +39,12 @@ http://deepscene.cs.uni-freiburg.de
 ```
 Python 2.7
 ```
+
 #### Python Packages
 ```
 tensorflow-gpu 1.4.0
 ```
+
 ## Configure the Network
 
 * Use checkpoint in init_checkpoint for network intialization
@@ -66,7 +69,7 @@ tensorflow-gpu 1.4.0
   ```
   (Input to model is in BGR and 'NHWC' form)
   
-#### Training
+#### Training Params
 ```
     gpu_id: id of gpu to be used
     model: name of the model
@@ -84,7 +87,8 @@ tensorflow-gpu 1.4.0
     power: parameter for poly learning rate
     
 ```
-#### Evaluation
+
+#### Evaluation Params
 ```
     gpu_id: id of gpu to be used
     model: name of the model
@@ -97,24 +101,24 @@ tensorflow-gpu 1.4.0
     width: width of input image
     
 ```
+
 ## Training and Evaluation
 
-#### Training
+#### Training Procedure
 Edit the config file for training in config folder.
 Run:
 ```
 python train.py -c config cityscapes_train.config or python train.py --config cityscapes_train.config
-
 ```
 
-#### Evaluation
+#### Evaluation Procedure
 
 Select a checkpoint to test/validate your model in terms of the mean IoU metric.
 Edit the config file for evaluation in config folder. Run:
-
 ```
 python evaluate.py -c config cityscapes_test.config or python evaluate.py --config cityscapes_test.config
 ```
+
 ## Additional Notes:
    * We only provide the single scale evaluation script. Multi-Scale+Flip evaluation further imporves the performance of the model.
    * The code in this repository only performs training on a single GPU. Multi-GPU training using synchronized batch normalization with larger batch size further improves the performance of the model.
