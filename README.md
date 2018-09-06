@@ -39,7 +39,8 @@ tensorflow-gpu 1.4.0
 ```
 ## Configure the network
 
-Use checkpoint in init_checkpoint for network intialization
+* Use checkpoint in init_checkpoint for network intialization
+* The initial BN layer of the network learns the appropriate transformation of input data during training. Therefore, no mean subtraction needed.
 #### Data
 
 * Augment the default dataset -> augmented-training-dataset.
