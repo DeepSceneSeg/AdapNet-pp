@@ -1,7 +1,9 @@
 # AdapNet++:  Self-Supervised Model Adaptation for Multimodal Semantic Segmentation
 AdapNet++ is a compact state-of-the-art deep learning model for semantic image segmentation, where the goal is to assign semantic labels (e.g., car, road, tree and so on) to every pixel in the input image. AdapNet++ is easily trainable on a single GPU with 12 GB of memory and has a fast inference time. AdapNet++ is benchmarked on Cityscapes, Synthia, ScanNet, SUN RGB-D and Freiburg Forest datasets.
 
-This repository contains our TensorFlow implementation of AdapNet++ which allows you to train your own model on any dataset and evaluate results in terms of mean IoU metric. 
+This repository contains our TensorFlow implementation of AdapNet++ which allows you to train your own model on any dataset and evaluate results in terms of the mean IoU metric. 
+
+Adapnet can further be used with [CMODE](https://github.com/DeepSceneSeg/CMoDE) or [SSMA](https://github.com/DeepSceneSeg/SSMA) fusion schemes for multimodal semantic segmentation.
 
 If you find the code useful for your research, please consider citing our paper:
 ```
@@ -97,7 +99,7 @@ tensorflow-gpu 1.4.0
 ```
 ## Training and Evaluation
 
-#### Start training
+#### Training
 Edit the config file for training in config folder.
 Run:
 ```
@@ -105,7 +107,7 @@ python train.py -c config cityscapes_train.config or python train.py --config ci
 
 ```
 
-#### Eval
+#### Evaluation
 
 Select a checkpoint to test/validate your model in terms of mean IoU metric.
 Edit the config file for evaluation in config folder. Run:
