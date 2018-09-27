@@ -73,8 +73,8 @@ def train_func(config):
 
         saver = tf.train.Saver(initialize_variables)
         saver.restore(save_path=config['intialize'], sess=sess)
-        saver = tf.train.Saver(max_to_keep=1000)
         model.create_optimizer()
+        saver = tf.train.Saver(max_to_keep=1000)
         sess.run(tf.global_variables_initializer())
         print 'Intialized'
     
