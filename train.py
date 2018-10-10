@@ -65,9 +65,8 @@ def train_func(config):
         import_variables = tf.get_collection(tf.GraphKeys.GLOBAL_VARIABLES)
         initialize_variables = {} 
         for var in import_variables: 
-            temp =var.name.split(':')[0]+' ' 
-            if temp in  name_var:
-                initialize_variables[var.name.split(':')[0]] = var
+            if var.name+' ' in  name_var:
+                initialize_variables[var.name] = var
 
         saver = tf.train.Saver(initialize_variables)
         saver.restore(save_path=config['intialize'], sess=sess)
