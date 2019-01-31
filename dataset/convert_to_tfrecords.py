@@ -49,7 +49,12 @@ def convert(f, record_name, mean_flag):
         if mean_flag:
             mean += modality1
         
-        label = cv2.imread(name[1], cv2.IMREAD_GRAYSCALE)
+        label = cv2.imread(name[1], cv2.IMREAD_ANYCOLOR)
+        try:
+            assert len(label.shape)==2
+        except AssertionError, e:
+            raise( AssertionError( "Label should be one channel!" ) )
+            
         height = modality1.shape[0]
         width = modality1.shape[1]
         modality1 = modality1.tostring()
