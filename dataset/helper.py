@@ -46,6 +46,14 @@ def get_test_batch(config):
     return iterator
 
 def compute_output_matrix(label_max, pred_max, output_matrix):
+    # Input:
+    # label_max shape(B,H,W): np.argmax(one_hot_encoded_label,3)
+    # pred_max shape(B,H,W): np.argmax(softmax,3)
+    # output_matrix shape(NUM_CLASSES,3): if func is called first time an array of 
+    #                                     zeros.
+    # Output:
+    # output_matrix shape(NUM_CLASSES,3): columns with total count of true positives,
+    #                                     false positives and false negatives.
     for i in xrange(output_matrix.shape[0]):
         temp = pred_max == i
         temp_l = label_max == i
@@ -62,6 +70,11 @@ def compute_output_matrix(label_max, pred_max, output_matrix):
     return output_matrix
 
 def compute_iou(output_matrix):
+    # Input:
+    # output_matrix shape(NUM_CLASSES,3): columns with total count of true positives,
+    #                                     false positives and false negatives.
+    # Output:
+    # IoU in percent form (doesn't count label id 0 contribution as it is assumed to be void) 
     return np.sum(output_matrix[1:, 0]/(np.sum(output_matrix[1:, :], 1).astype(np.float32)+1e-10))/(output_matrix.shape[0]-1)*100
 
 def parser(proto_data, num_classes):
