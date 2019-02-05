@@ -73,7 +73,7 @@ tensorflow-gpu 1.4.0
 ```
     gpu_id: id of gpu to be used
     model: name of the model
-    num_classes: number of classes
+    num_classes: number of classes (including void, label id:0)
     intialize:  path to pre-trained model
     checkpoint: path to save model
     train_data: path to dataset .tfrecords
@@ -91,7 +91,7 @@ tensorflow-gpu 1.4.0
 ```
     gpu_id: id of gpu to be used
     model: name of the model
-    num_classes: number of classes
+    num_classes: number of classes (including void, label id:0)
     checkpoint: path to saved model
     test_data: path to dataset .tfrecords
     batch_size: evaluation batch size
