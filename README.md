@@ -117,8 +117,44 @@ Edit the config file for evaluation in config folder. Run:
 python evaluate.py -c config cityscapes_test.config or python evaluate.py --config cityscapes_test.config
 ```
 
+## Models
+#### Forest (void + 5 classes) [768x384]
+  | Modality       | mIoU     | 
+  | :--- | ------------- |
+  | [RGB](http://deepscene.cs.uni-freiburg.de/static/models/forest/forest_rgb.zip) | 83.18 |
+  | [Depth](http://deepscene.cs.uni-freiburg.de/static/models/forest/forest_depth.zip) | 73.93 |
+  | [EVI](http://deepscene.cs.uni-freiburg.de/static/models/forest/forest_evi.zip) | 80.96 |
+  
+#### Cityscapes (void + 11 classes) [768x384]
+  | Modality       | mIoU     | 
+  | :--- | ------------- |
+  | [RGB](http://deepscene.cs.uni-freiburg.de/static/models/cityscapes/cityscapes_rgb.zip) | 80.77 |
+  | [Depth](http://deepscene.cs.uni-freiburg.de/static/models/cityscapes/cityscapes_depth.zip) | 66.36 |
+  | [HHA](http://deepscene.cs.uni-freiburg.de/static/models/cityscapes/cityscapes_hha.zip) | 67.56 |
+  
+#### Synthia (void + 11 classes) [768x384]
+  | Modality       | mIoU     | 
+  | :--- | ------------- |
+  | [RGB](http://deepscene.cs.uni-freiburg.de/static/models/synthia/synthia_rgb.zip) | 86.7 |
+  | [Depth](http://deepscene.cs.uni-freiburg.de/static/models/synthia/synthia_depth.zip) | 87.87 |
+  
+#### SUN-RGBD (void + 37 classes) [768x384]
+  | Modality       | mIoU     | 
+  | :--- | ------------- |
+  | [RGB](http://deepscene.cs.uni-freiburg.de/static/models/sun_rgbd/sun_rgb.zip) | 38.4 |
+  | [Depth](http://deepscene.cs.uni-freiburg.de/static/models/sun_rgbd/sun_depth.zip) | 34.27 |
+  | [HHA](http://deepscene.cs.uni-freiburg.de/static/models/sun_rgbd/sun_hha.zip) | 34.59 |
+  
+#### Scannetv2 (void + 20 classes) [768x384]
+  | Modality       | mIoU     | 
+  | :--- | ------------- |
+  | [RGB](http://deepscene.cs.uni-freiburg.de/static/models/sun_rgbd/scannetv2/scannetv2_rgb.zip) | 52.92 |
+  | [Depth](http://deepscene.cs.uni-freiburg.de/static/models/scannetv2/scannetv2_depth.zip) | 53.8 |
+  | [HHA](http://deepscene.cs.uni-freiburg.de/static/models/scannetv2/scannetv2_hha.zip) | 54.19 |
+
 ## Additional Notes:
    * We only provide the single scale evaluation script. Multi-Scale+Flip evaluation further imporves the performance of the model.
+   * The mIoU of model checkpoints provided might differ from the ones reported in the paper.
    * The code in this repository only performs training on a single GPU. Multi-GPU training using synchronized batch normalization with larger batch size further improves the performance of the model.
    * Initializing the model with pre-trained weights from large datasets such as the Mapillary Vistas and BDD100K yields an improved performance.
    
