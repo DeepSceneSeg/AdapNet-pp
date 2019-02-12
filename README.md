@@ -156,19 +156,19 @@ python evaluate.py -c config cityscapes_test.config or python evaluate.py --conf
   | [HHA](http://deepscene.cs.uni-freiburg.de/static/models/scannetv2/adapnet++_scannetv2_hha.zip) | 54.19 |
 
 ## Benchmark Results
-  * val_mIoU: Evaluation results on the full resolution val set as reported by the corresponding methods.
-  * test_mIoU: Evaluation results from the benchmarking server on the full resolution test set.
-  * params: Computed using the official implementation of each method.
-  * Time: Inference time computed using the official implementation of each method for 768x384 resolution.
+  * mIoU_val: Evaluation results on the full resolution val set as reported by the corresponding methods.
+  * mIoU_test: Evaluation results from the benchmarking server on the full resolution test set.
+  * Params: Computed using the official implementation of each method.
+  * Time: Inference time computed using the official implementation of each method for an input image resolution of 768x384 pixels.
 #### Cityscapes (Result not published)
-  | Method  |Backbone | mIoU_val (%) | mIoU_test (%) | Params (M) | Time(ms) |
+  | Method  | Backbone | mIoU_val (%) | mIoU_test (%) | Params (M) | Time (ms) |
   | :--- | ------------- |------------- | ------------- | ------------- | ------------- |
   |DRN | WideResNet-38 | 79.69 | 82.82 |129.16 | 1259.67 |
-  |DPC| Modified Xception | 80.85 | 82.66 | 41.82 | 144.41 |
-  |**SSMA**| ResNet-50 | 82.19 | 82.31| 56.44 | 101.95 |
+  |DPC | Modified Xception | 80.85 | 82.66 | 41.82 | 144.41 |
+  |**SSMA** | ResNet-50 | 82.19 | 82.31| 56.44 | 101.95 |
   |DeepLabv3+ | Modified Xception | 79.55 | 82.14 | 43.48 | 140.99 |
   |Mapillary | WideResNet-38 | 78.31 | 82.03 | 135.86 | 214.46 |
-  |**Adapnet++**| ResNet-50 | 81.24 | 81.34 | **30.20** | **72.94** |
+  |**Adapnet++** | ResNet-50 | 81.24 | 81.34 | **30.20** | **72.94** |
   |DeepLabv3 | ResNet-101 | 79.30 | 81.34 | 58.16 | 79.90 |
   |PSPNet | ResNet-101 | 80.91 | 81.19 | 56.27 | 172.42 |
   
