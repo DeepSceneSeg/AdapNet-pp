@@ -157,10 +157,10 @@ python evaluate.py -c config cityscapes_test.config or python evaluate.py --conf
   | [EVI](http://deepscene.cs.uni-freiburg.de/static/models/forest/adapnet++_forest_evi.zip) | 80.96 |
 
 ## Benchmark Results
-  * mIoU_val: Evaluation results on the full resolution val set as reported by the corresponding methods.
-  * mIoU_test: Evaluation results from the benchmarking server on the full resolution test set.
+  * mIoU_val: Evaluation results on the full resolution val set (all semantic classes) as reported by the corresponding methods.
+  * mIoU_test: Evaluation results from the benchmarking server on the full resolution test set (all semantic classes).
   * Params: Computed using the official implementation of each method.
-  * Time: Inference time computed using the official implementation of each method for an input image of 768x384 pixels.
+  * Time: Inference time computed on an NVIDIA TITAX X (PASCAL) GPU using the official implementation of each method for an input image resolution of 768x384 pixels.
 
 #### Cityscapes (Not published on the leaderboard yet)
   | Method  | Backbone | mIoU_val (%) | mIoU_test (%) | Params (M) | Time (ms) |
