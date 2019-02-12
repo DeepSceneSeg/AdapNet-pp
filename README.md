@@ -118,43 +118,70 @@ python evaluate.py -c config cityscapes_test.config or python evaluate.py --conf
 ```
 
 ## Models
-#### Forest (void + 5 classes) [768x384]
+* All the models were trained with the full input_image and labels resized to 768x384 resolution.
+* mIoU indicates the single scale evaluation on the val set of each dataset where input_image and labels were resized to 768x384 resolution.
+* The mIoU of model checkpoints provided might slightly differ from the results reported in the paper.
+#### Forest (void + 5 classes) 
   | Modality       | mIoU     | 
   | :--- | ------------- |
-  | [RGB](http://deepscene.cs.uni-freiburg.de/static/models/forest/forest_rgb.zip) | 83.18 |
-  | [Depth](http://deepscene.cs.uni-freiburg.de/static/models/forest/forest_depth.zip) | 73.93 |
-  | [EVI](http://deepscene.cs.uni-freiburg.de/static/models/forest/forest_evi.zip) | 80.96 |
+  | [RGB](http://deepscene.cs.uni-freiburg.de/static/models/forest/adapnet++_forest_rgb.zip) | 83.18 |
+  | [Depth](http://deepscene.cs.uni-freiburg.de/static/models/forest/adapnet++_forest_depth.zip) | 73.93 |
+  | [EVI](http://deepscene.cs.uni-freiburg.de/static/models/forest/adapnet++_forest_evi.zip) | 80.96 |
   
-#### Cityscapes (void + 11 classes) [768x384]
+#### Cityscapes (void + 11 classes) 
   | Modality       | mIoU     | 
   | :--- | ------------- |
-  | [RGB](http://deepscene.cs.uni-freiburg.de/static/models/cityscapes/cityscapes_rgb.zip) | 80.77 |
-  | [Depth](http://deepscene.cs.uni-freiburg.de/static/models/cityscapes/cityscapes_depth.zip) | 66.36 |
-  | [HHA](http://deepscene.cs.uni-freiburg.de/static/models/cityscapes/cityscapes_hha.zip) | 67.56 |
+  | [RGB](http://deepscene.cs.uni-freiburg.de/static/models/cityscapes/adapnet++_cityscapes_rgb.zip) | 80.77 |
+  | [Depth](http://deepscene.cs.uni-freiburg.de/static/models/cityscapes/adapnet++_cityscapes_depth.zip) | 65.01 |
+  | [HHA](http://deepscene.cs.uni-freiburg.de/static/models/cityscapes/adapnet++_cityscapes_hha.zip) | 67.63 |
   
-#### Synthia (void + 11 classes) [768x384]
+#### Synthia (void + 11 classes) 
   | Modality       | mIoU     | 
   | :--- | ------------- |
-  | [RGB](http://deepscene.cs.uni-freiburg.de/static/models/synthia/synthia_rgb.zip) | 86.7 |
-  | [Depth](http://deepscene.cs.uni-freiburg.de/static/models/synthia/synthia_depth.zip) | 87.87 |
+  | [RGB](http://deepscene.cs.uni-freiburg.de/static/models/synthia/adapnet++_synthia_rgb.zip) | 86.68 |
+  | [Depth](http://deepscene.cs.uni-freiburg.de/static/models/synthia/adapnet++_synthia_depth.zip) | 87.87 |
   
-#### SUN-RGBD (void + 37 classes) [768x384]
+#### SUN-RGBD (void + 37 classes)
   | Modality       | mIoU     | 
   | :--- | ------------- |
-  | [RGB](http://deepscene.cs.uni-freiburg.de/static/models/sun_rgbd/sun_rgb.zip) | 38.4 |
-  | [Depth](http://deepscene.cs.uni-freiburg.de/static/models/sun_rgbd/sun_depth.zip) | 34.27 |
-  | [HHA](http://deepscene.cs.uni-freiburg.de/static/models/sun_rgbd/sun_hha.zip) | 34.59 |
+  | [RGB](http://deepscene.cs.uni-freiburg.de/static/models/sun_rgbd/adapnet++_sun_rgb.zip) | 37.98 |
+  | [Depth](http://deepscene.cs.uni-freiburg.de/static/models/sun_rgbd/adapnet++_sun_depth.zip) | 34.28 |
+  | [HHA](http://deepscene.cs.uni-freiburg.de/static/models/sun_rgbd/adapnet++_sun_hha.zip) | 34.59 |
   
-#### Scannetv2 (void + 20 classes) [768x384]
+#### ScanNet v2 (void + 20 classes) 
   | Modality       | mIoU     | 
   | :--- | ------------- |
-  | [RGB](http://deepscene.cs.uni-freiburg.de/static/models/sun_rgbd/scannetv2/scannetv2_rgb.zip) | 52.92 |
-  | [Depth](http://deepscene.cs.uni-freiburg.de/static/models/scannetv2/scannetv2_depth.zip) | 53.8 |
-  | [HHA](http://deepscene.cs.uni-freiburg.de/static/models/scannetv2/scannetv2_hha.zip) | 54.19 |
+  | [RGB](http://deepscene.cs.uni-freiburg.de/static/models/sun_rgbd/scannetv2/adapnet++_scannetv2_rgb.zip) | 52.92 |
+  | [Depth](http://deepscene.cs.uni-freiburg.de/static/models/scannetv2/adapnet++_scannetv2_depth.zip) | 53.8 |
+  | [HHA](http://deepscene.cs.uni-freiburg.de/static/models/scannetv2/adapnet++_scannetv2_hha.zip) | 54.19 |
 
+## Benchmark Results
+  * val_mIoU: Evaluation results on the full resolution val set as reported by the corresponding methods.
+  * test_mIoU: Evaluation results from the benchmarking server on the full resolution test set.
+  * params: Computed using the official implementation of each method.
+  * Time: Inference time computed using the official implementation of each method for 768x384 resolution.
+#### Cityscapes (Result not published)
+  | Method  |Backbone | mIoU_val (%) | mIoU_test (%) | Params (M) | Time(ms) |
+  | :--- | ------------- |------------- | ------------- | ------------- | ------------- |
+  |DRN | WideResNet-38 | 79.69 | 82.82 |129.16 | 1259.67 |
+  |DPC| Modified Xception | 80.85 | 82.66 | 41.82 | 144.41 |
+  |**SSMA**| ResNet-50 | 82.19 | 82.31| 56.44 | 101.95 |
+  |DeepLabv3+ | Modified Xception | 79.55 | 82.14 | 43.48 | 140.99 |
+  |Mapillary | WideResNet-38 | 78.31 | 82.03 | 135.86 | 214.46 |
+  |**Adapnet++**| ResNet-50 | 81.24 | 81.34 | **30.20** | **72.94** |
+  |DeepLabv3 | ResNet-101 | 79.30 | 81.34 | 58.16 | 79.90 |
+  |PSPNet | ResNet-101 | 80.91 | 81.19 | 56.27 | 172.42 |
+  
+#### [ScanNet v2](http://kaldir.vc.in.tum.de/scannet_benchmark/semantic_label_2d)
+  | Method  | mIoU_test (%) |
+  | :--- | ------------- |
+  | **SSMA** |     57.7          |
+  | FuseNet |     52.1          |
+  | **Adapnet++** |       50.3        | 
+  | 3DMV (2d proj) |    49.8           | 
+  | ILC-PSPNet |      47.5         |
 ## Additional Notes:
    * We only provide the single scale evaluation script. Multi-Scale+Flip evaluation further imporves the performance of the model.
-   * The mIoU of model checkpoints provided might differ from the ones reported in the paper.
    * The code in this repository only performs training on a single GPU. Multi-GPU training using synchronized batch normalization with larger batch size further improves the performance of the model.
    * Initializing the model with pre-trained weights from large datasets such as the Mapillary Vistas and BDD100K yields an improved performance.
    
