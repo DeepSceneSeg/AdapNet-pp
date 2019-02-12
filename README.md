@@ -159,7 +159,7 @@ python evaluate.py -c config cityscapes_test.config or python evaluate.py --conf
   * mIoU_val: Evaluation results on the full resolution val set as reported by the corresponding methods.
   * mIoU_test: Evaluation results from the benchmarking server on the full resolution test set.
   * Params: Computed using the official implementation of each method.
-  * Time: Inference time computed using the official implementation of each method for an input image resolution of 768x384 pixels.
+  * Time: Inference time computed using the official implementation of each method for an input image of 768x384 pixels.
 #### Cityscapes (Result not published)
   | Method  | Backbone | mIoU_val (%) | mIoU_test (%) | Params (M) | Time (ms) |
   | :--- | ------------- |------------- | ------------- | ------------- | ------------- |
