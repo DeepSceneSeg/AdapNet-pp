@@ -121,12 +121,6 @@ python evaluate.py -c config cityscapes_test.config or python evaluate.py --conf
 * All the models were trained with the full input_image and labels resized to 768x384 resolution.
 * mIoU indicates the single scale evaluation on the val set of each dataset where input_image and labels were resized to 768x384 resolution.
 * The mIoU of model checkpoints provided might slightly differ from the results reported in the paper.
-#### Forest (void + 5 classes) 
-  | Modality       | mIoU     | 
-  | :--- | ------------- |
-  | [RGB](http://deepscene.cs.uni-freiburg.de/static/models/forest/adapnet++_forest_rgb.zip) | 83.18 |
-  | [Depth](http://deepscene.cs.uni-freiburg.de/static/models/forest/adapnet++_forest_depth.zip) | 73.93 |
-  | [EVI](http://deepscene.cs.uni-freiburg.de/static/models/forest/adapnet++_forest_evi.zip) | 80.96 |
   
 #### Cityscapes (void + 11 classes) 
   | Modality       | mIoU     | 
@@ -141,7 +135,7 @@ python evaluate.py -c config cityscapes_test.config or python evaluate.py --conf
   | [RGB](http://deepscene.cs.uni-freiburg.de/static/models/synthia/adapnet++_synthia_rgb.zip) | 86.68 |
   | [Depth](http://deepscene.cs.uni-freiburg.de/static/models/synthia/adapnet++_synthia_depth.zip) | 87.87 |
   
-#### SUN-RGBD (void + 37 classes)
+#### SUN RGB-D (void + 37 classes)
   | Modality       | mIoU     | 
   | :--- | ------------- |
   | [RGB](http://deepscene.cs.uni-freiburg.de/static/models/sun_rgbd/adapnet++_sun_rgb.zip) | 37.98 |
@@ -154,13 +148,21 @@ python evaluate.py -c config cityscapes_test.config or python evaluate.py --conf
   | [RGB](http://deepscene.cs.uni-freiburg.de/static/models/sun_rgbd/scannetv2/adapnet++_scannetv2_rgb.zip) | 52.92 |
   | [Depth](http://deepscene.cs.uni-freiburg.de/static/models/scannetv2/adapnet++_scannetv2_depth.zip) | 53.8 |
   | [HHA](http://deepscene.cs.uni-freiburg.de/static/models/scannetv2/adapnet++_scannetv2_hha.zip) | 54.19 |
+  
+#### Freiburg Forest (void + 5 classes) 
+  | Modality       | mIoU     | 
+  | :--- | ------------- |
+  | [RGB](http://deepscene.cs.uni-freiburg.de/static/models/forest/adapnet++_forest_rgb.zip) | 83.18 |
+  | [Depth](http://deepscene.cs.uni-freiburg.de/static/models/forest/adapnet++_forest_depth.zip) | 73.93 |
+  | [EVI](http://deepscene.cs.uni-freiburg.de/static/models/forest/adapnet++_forest_evi.zip) | 80.96 |
 
 ## Benchmark Results
   * mIoU_val: Evaluation results on the full resolution val set as reported by the corresponding methods.
   * mIoU_test: Evaluation results from the benchmarking server on the full resolution test set.
   * Params: Computed using the official implementation of each method.
   * Time: Inference time computed using the official implementation of each method for an input image of 768x384 pixels.
-#### Cityscapes (Result not published)
+
+#### Cityscapes (Not published on the leaderboard yet)
   | Method  | Backbone | mIoU_val (%) | mIoU_test (%) | Params (M) | Time (ms) |
   | :--- | ------------- |------------- | ------------- | ------------- | ------------- |
   |DRN | WideResNet-38 | 79.69 | 82.82 |129.16 | 1259.67 |
@@ -180,6 +182,7 @@ python evaluate.py -c config cityscapes_test.config or python evaluate.py --conf
   | **Adapnet++** |       50.3        | 
   | 3DMV (2d proj) |    49.8           | 
   | ILC-PSPNet |      47.5         |
+
 ## Additional Notes:
    * We only provide the single scale evaluation script. Multi-Scale+Flip evaluation further imporves the performance of the model.
    * The code in this repository only performs training on a single GPU. Multi-GPU training using synchronized batch normalization with larger batch size further improves the performance of the model.
