@@ -1,9 +1,9 @@
 # AdapNet++:  Self-Supervised Model Adaptation for Multimodal Semantic Segmentation
 AdapNet++ is a compact state-of-the-art deep learning model for semantic image segmentation, where the goal is to assign semantic labels (e.g., car, road, tree and so on) to every pixel in the input image. AdapNet++ is easily trainable on a single GPU with 12 GB of memory and has a fast inference time. AdapNet++ is benchmarked on Cityscapes, Synthia, ScanNet, SUN RGB-D and Freiburg Forest datasets.
 
-This repository contains our TensorFlow implementation of AdapNet++ which allows you to train your own model on any dataset and evaluate results in terms of the mean IoU metric. 
+This repository contains our TensorFlow implementation of AdapNet++, which allows you to train your own model on any dataset and evaluate results in terms of the mean IoU metric. 
 
-Adapnet++ can further be used with [CMoDE](https://github.com/DeepSceneSeg/CMoDE) or [SSMA](https://github.com/DeepSceneSeg/SSMA) fusion schemes for multimodal semantic segmentation.
+Adapnet++ can further be used with [SSMA](https://github.com/DeepSceneSeg/SSMA) or [CMoDE](https://github.com/DeepSceneSeg/CMoDE) fusion schemes for multimodal semantic segmentation.
 
 If you find the code useful for your research, please consider citing our paper:
 ```
@@ -160,7 +160,7 @@ python evaluate.py -c config cityscapes_test.config or python evaluate.py --conf
   * mIoU_val: Evaluation results on the full resolution val set (all semantic classes) as reported by the corresponding methods.
   * mIoU_test: Evaluation results from the benchmarking server on the full resolution test set (all semantic classes).
   * Params: Computed using the official implementation of each method.
-  * Time: Inference time computed on an NVIDIA TITAX X (PASCAL) GPU using the official implementation of each method for an input image resolution of 768x384 pixels.
+  * Time: Inference time computed on an NVIDIA TITAN X (PASCAL) GPU using the official implementation of each method for an input image resolution of 768x384 pixels.
 
 #### Cityscapes (Not published on the leaderboard yet)
   | Method  | Backbone | mIoU_val (%) | mIoU_test (%) | Params (M) | Time (ms) |
