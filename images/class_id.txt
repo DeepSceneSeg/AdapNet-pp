@@ -1,0 +1,102 @@
+Cityscapes (void + 11 classes):
+0: Void
+1: Sky
+2: Building
+3: Road
+4: SideWalk
+5: Fence
+6: Vegetation
+7: Pole
+8: Car/Truck/Bus
+9: Traffic Sign
+10: Pedestrians
+11: Rider/Bicycle/MotorBikes
+
+Synthia (void + 11 classes):
+0: Void
+1: Sky
+2: Building
+3: Road
+4: SideWalk
+5: Fence
+6: Vegetation
+7: Pole
+8: Car/Truck/Bus
+9: Traffic Sign
+10: Pedestrians
+11: Rider/Bicycle/MotorBikes
+
+SUN RGB-D (void + 37 classes):
+0: Void
+1: Wall
+2: Floor
+3: Cabinet
+4: Bed
+5: Chair
+6: Sofa
+7: Table
+8: Door
+9: Window
+10: Bookshelf
+11: Picture
+12: Counter
+13: Blinds
+14: Desk
+15: Shelves
+16: Curtain
+17: Dresser
+18: Pillow
+19: Mirror
+20: Floor Mat
+21: clothes
+22: Ceiling
+23: Books
+24: Fridge
+25: Tv
+26: Paper
+27: Towel
+28: Shower Curtain
+29: Box
+30: Whiteboard
+31: Person
+32: Night Stand
+33: Toilet
+34: Sink
+35: Lamp
+36: Bathtub
+37: Bag
+
+ScanNet v2 (void + 20 classes):
+0: Void
+1: Wall
+2: Floor
+3: Cabinet
+4: Bed
+5: Chair
+6: Sofa
+7: Table
+8: Door
+9: Window
+10: Bookshelf
+11: Picture
+12: Counter
+13: Desk
+14: Curtain
+15: Refrigerator
+16: Shower Curtain
+17: Toilet
+18: Sink
+19: Bathtub
+20: Other Furniture
+
+Freiburg Forest (void + 5 classes):
+0: Void
+1: Trail
+2: Grass
+3: Vegetation
+4: Sky
+5: Obstacles
+
+
+
+
