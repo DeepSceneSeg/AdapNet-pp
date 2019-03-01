@@ -10,7 +10,7 @@ Cityscapes (void + 11 classes):
 8: Car/Truck/Bus
 9: Traffic Sign
 10: Pedestrians
-11: Rider/Bicycle/MotorBikes
+11: Rider/Bicycle/Motorcycle
 
 Synthia (void + 11 classes):
 0: Void
@@ -24,7 +24,7 @@ Synthia (void + 11 classes):
 8: Car/Truck/Bus
 9: Traffic Sign
 10: Pedestrians
-11: Rider/Bicycle/MotorBikes
+11: Rider/Bicycle/Motorcycle
 
 SUN RGB-D (void + 37 classes):
 0: Void
@@ -97,6 +97,26 @@ Freiburg Forest (void + 5 classes):
 4: Sky
 5: Obstacles
 
-
+Cityscapes (void + 19 classes):
+0: Void
+1: Road
+2: SideWalk
+3: Building
+4: Wall
+5: Fence
+6: Pole
+7: Traffic Light
+8: Traffic Sign
+9: Vegetation
+10: Terrain
+11: Sky
+12: Person
+13: Rider
+14: Car
+15: Truck
+16: Bus
+17: Train
+18: Motorcycle
+19: Bicycle
 
 
