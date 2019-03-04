@@ -156,14 +156,20 @@ python evaluate.py -c config cityscapes_test.config or python evaluate.py --conf
   | [RGB](http://deepscene.cs.uni-freiburg.de/static/models/forest/adapnet++_forest_rgb.zip) | 83.18 |
   | [Depth](http://deepscene.cs.uni-freiburg.de/static/models/forest/adapnet++_forest_depth.zip) | 73.93 |
   | [EVI](http://deepscene.cs.uni-freiburg.de/static/models/forest/adapnet++_forest_evi.zip) | 80.96 |
-  
+---
 #### Cityscapes (void + 19 classes)
-
   | Modality       | mIoU     | 
   | :--- | ------------- |
-  | [RGB](http://deepscene.cs.uni-freiburg.de/static/models/cityscapes_19/adapnet++_cityscapes_19.zip) | 77.5 |  
-* The model was trained with the crop size of 768x768.
+  | [RGB](http://deepscene.cs.uni-freiburg.de/static/models/cityscapes_19/adapnet++_cityscapes_19_rgb.zip) | 78.56 |
+  | [HHA](http://deepscene.cs.uni-freiburg.de/static/models/cityscapes_19/adapnet++_cityscapes_19_hha.zip) | 64.24 |
+* The model was trained with the crop size of 768x768 and eAspp_rate = [6, 12, 18] 
 * mIoU indicates the single scale evaluation on the val set where input_image and labels were of 2048x1024 resolution.
+* The model checkpoints provided are not the same model used for the results reported in the paper.
+---
+
+
+
+
 ## Benchmark Results
   * mIoU_val: Evaluation results on the full resolution val set (all semantic classes) as reported by the corresponding methods.
   * mIoU_test: Evaluation results from the benchmarking server on the full resolution test set (all semantic classes).
