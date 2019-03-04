@@ -29,7 +29,7 @@ def test_func(config):
     module = importlib.import_module('models.' + config['model'])
     model_func = getattr(module, config['model'])
     data_list, iterator = get_test_data(config)
-    resnet_name = 'resnet_v1_50'
+    resnet_name = 'resnet_v2_50'
 
     with tf.variable_scope(resnet_name):
         model = model_func(num_classes=config['num_classes'], training=False)

@@ -30,7 +30,7 @@ def train_func(config):
     module = importlib.import_module('models.'+config['model'])
     model_func = getattr(module, config['model'])
     data_list, iterator = get_train_data(config)
-    resnet_name = 'resnet_v1_50'
+    resnet_name = 'resnet_v2_50'
     global_step = tf.Variable(0, trainable=False, name='Global_Step')
 
     with tf.variable_scope(resnet_name):
