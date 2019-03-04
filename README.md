@@ -164,7 +164,7 @@ python evaluate.py -c config cityscapes_test.config or python evaluate.py --conf
   | [HHA](http://deepscene.cs.uni-freiburg.de/static/models/cityscapes_19/adapnet++_cityscapes_19_hha.zip) | 64.24 |
 * The model was trained with the crop size of 768x768 and eAspp_rate = [6, 12, 18] 
 * mIoU indicates the single scale evaluation on the val set where input_image and labels were of 2048x1024 resolution.
-* The model checkpoints provided are not the same model used for the results reported in the paper.
+* The mIoU of model checkpoints provided might slightly differ from the results reported in the paper.
 ---
 
 
