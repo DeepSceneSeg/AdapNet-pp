@@ -158,8 +158,8 @@ python evaluate.py -c config cityscapes_test.config or python evaluate.py --conf
   | [EVI](http://deepscene.cs.uni-freiburg.de/static/models/forest/adapnet++_forest_evi.zip) | 80.96 |
 ---
 #### Cityscapes (void + 19 classes)
-  | Modality       | mIoU     | 
-  | :--- | ------------- |
+  | Modality       |
+  | :--- |
   | [RGB](http://deepscene.cs.uni-freiburg.de/static/models/cityscapes_19/adapnet++_cityscapes_19_rgb.zip) |
   | [HHA](http://deepscene.cs.uni-freiburg.de/static/models/cityscapes_19/adapnet++_cityscapes_19_hha.zip) |
 * The model was trained with the crop size of 768x768 and eAspp_rate = [6, 12, 18] 
