@@ -146,7 +146,7 @@ python evaluate.py -c config cityscapes_test.config or python evaluate.py --conf
 #### ScanNet v2 (void + 20 classes) 
   | Modality       | mIoU     | 
   | :--- | ------------- |
-  | [RGB](http://deepscene.cs.uni-freiburg.de/static/models/sun_rgbd/scannetv2/adapnet++_scannetv2_rgb.zip) | 52.92 |
+  | [RGB](http://deepscene.cs.uni-freiburg.de/static/models/scannetv2/adapnet++_scannetv2_rgb.zip) | 52.92 |
   | [Depth](http://deepscene.cs.uni-freiburg.de/static/models/scannetv2/adapnet++_scannetv2_depth.zip) | 53.8 |
   | [HHA](http://deepscene.cs.uni-freiburg.de/static/models/scannetv2/adapnet++_scannetv2_hha.zip) | 54.19 |
   
