@@ -106,7 +106,7 @@ tensorflow-gpu 1.4.0
 Edit the config file for training in config folder.
 Run:
 ```
-python train.py -c config cityscapes_train.config or python train.py --config cityscapes_train.config
+python train.py -c config\cityscapes_train.config or python train.py --config config\cityscapes_train.config
 ```
 
 #### Evaluation Procedure
