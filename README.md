@@ -1,4 +1,11 @@
 # AdapNet++:  Self-Supervised Model Adaptation for Multimodal Semantic Segmentation
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/self-supervised-model-adaptation-for/semantic-segmentation-on-cityscapes)](https://paperswithcode.com/sota/semantic-segmentation-on-cityscapes?p=self-supervised-model-adaptation-for)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/self-supervised-model-adaptation-for/semantic-segmentation-on-synthia-cvpr16)](https://paperswithcode.com/sota/semantic-segmentation-on-synthia-cvpr16?p=self-supervised-model-adaptation-for)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/self-supervised-model-adaptation-for/semantic-segmentation-on-scannetv2)](https://paperswithcode.com/sota/semantic-segmentation-on-scannetv2?p=self-supervised-model-adaptation-for)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/self-supervised-model-adaptation-for/semantic-segmentation-on-sun-rgbd)](https://paperswithcode.com/sota/semantic-segmentation-on-sun-rgbd?p=self-supervised-model-adaptation-for)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/self-supervised-model-adaptation-for/semantic-segmentation-on-freiburg-forest)](https://paperswithcode.com/sota/semantic-segmentation-on-freiburg-forest?p=self-supervised-model-adaptation-for)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/self-supervised-model-adaptation-for/scene-recognition-on-scannet)](https://paperswithcode.com/sota/scene-recognition-on-scannet?p=self-supervised-model-adaptation-for)
+
 AdapNet++ is a compact state-of-the-art deep learning model for semantic image segmentation, where the goal is to assign semantic labels (e.g., car, road, tree and so on) to every pixel in the input image. AdapNet++ is easily trainable on a single GPU with 12 GB of memory and has a fast inference time. AdapNet++ is benchmarked on Cityscapes, Synthia, ScanNet, SUN RGB-D and Freiburg Forest datasets.
 
 This repository contains our TensorFlow implementation of AdapNet++, which allows you to train your own model on any dataset and evaluate results in terms of the mean IoU metric. 
