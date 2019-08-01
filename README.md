@@ -61,7 +61,7 @@ tensorflow-gpu 1.4.0
 * The initial BN layer of the network learns the appropriate transformation of input data during training. Therefore, no mean subtraction needed.
 
 #### Data
-
+* We use [Image Processing for Basic Depth Completion](https://github.com/kujason/ip_basic) to fill the depth data for all datasets except SUN-RGBD before obtaining the JET colormap or HHA.
 * Augment the training data.
   In our work, we first resized the images in the dataset to 768x384 pixels and then apply a series of augmentations (random_flip, random_scale and random_crop).
 
