@@ -62,7 +62,7 @@ tensorflow-gpu 1.4.0
 
 #### Data
 * We use [Image Processing for Basic Depth Completion](https://github.com/kujason/ip_basic) to fill the depth data for all datasets except SUN-RGBD before obtaining the JET colormap or HHA.
-* Augment the training data.
+* Augment the training data(images and [gt_mapped](https://github.com/DeepSceneSeg/AdapNet-pp/blob/master/images/class_id.txt)).
   In our work, we first resized the images in the dataset to 768x384 pixels and then apply a series of augmentations (random_flip, random_scale and random_crop).
 
 * Convert the training data (augmented), test data and validation data into the .tfrecords format.
